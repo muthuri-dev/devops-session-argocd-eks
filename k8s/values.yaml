@@ -7,10 +7,8 @@ replicaCount: 2
 
 # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
 image:
-  repository: graphit-org/graphit-client
-  # This sets the pull policy for images.
+  repository: ghcr.io/graphit-org/graphit-client
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
   tag: "13f3d1b2974c467575d7310fb26502fcc022b069"
 
 # This is for the secrets for pulling an image from a private repository more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
