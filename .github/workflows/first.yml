@@ -9,6 +9,9 @@ jobs:
             - name: welcome message
               run: echo "My github actions job"
 
+            - name: directory
+              run: pwd
+
             - name: List files
               run: ls
 
