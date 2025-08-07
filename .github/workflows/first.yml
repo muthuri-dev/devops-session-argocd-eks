@@ -9,15 +9,14 @@ jobs:
 
             - name: checkout repo
               uses: actions/checkout@v4
-              
+
             - name: welcome message
               run: echo "My github actions job"
 
             - name: directory
-              run: pwd
+              run: |
+                pwd
+                ls -lart
+                ls -ltra
+                cat README.md
 
-            - name: List files
-              run: ls
-
-            - name: Read file
-              run: cat README.md
