@@ -22,3 +22,5 @@ jobs:
             - name: Checkout repo files
               run: ls -lart
 
+            - name: Checkout repo files
+              run: touch script.sh
