@@ -19,6 +19,7 @@ jobs:
               run: sleep 3
 
     test_job: 
+        needs: ascii_job
         runs-on: ubuntu-latest
         steps: 
 
@@ -28,6 +29,7 @@ jobs:
               run: grep 'dragon' dragon.txt
 
     deploy_job: 
+        needs: test_job
         runs-on: ubuntu-latest
         steps: 
 
