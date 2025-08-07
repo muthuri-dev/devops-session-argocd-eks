@@ -19,4 +19,10 @@ jobs:
                 ls -lart
                 ls -ltra
                 cat README.md
+            
+            - name: Generate ASCII Artwork
+              run: cowsay -f "Run for cover I am dragon" >> gragon.txt
+
+            - name: Create file
+              run: touch script.sh
 
