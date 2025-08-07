@@ -15,3 +15,24 @@ jobs:
                chmod +x script.sh
                ./script.sh
 
+            - name: sleep for 3 seconds
+              run: sleep 3
+
+    test_job: 
+        runs-on: ubuntu-latest
+        steps: 
+
+            - name: sleep for 4 seconds
+              run: sleep 4
+            - name: Test file exists
+              run: grep 'dragon' dragon.txt
+
+    deploy_job: 
+        runs-on: ubuntu-latest
+        steps: 
+
+            - name: Read file
+              run: cat dragon.txt
+
+            - name: Deploy
+              run: echo deploying ....
